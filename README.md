@@ -1,6 +1,6 @@
-#Projeto AutoEmporium
+# Projeto AutoEmporium
 
-##Desenvolvido por:
+## Desenvolvido por:
 João Victor Soave
 Felipe Fernandes
 Henrique Ignácio
