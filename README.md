@@ -1,5 +1,6 @@
 # AutoEmporium
 <img src='src/assets/Captura de tela 2024-05-16 182832.png'>
+
 Bem-vindo ao AutoEmporium! Este é um projeto de e-commerce para compra e venda de carros novos e usados. Desenvolvido como parte da matéria de Web Development da [FIAP](https://www.fiap.com.br/), ministrada pelo professor [Wellington Cidade](https://www.linkedin.com/in/wellingtoncidade/).
 
 ## Páginas
