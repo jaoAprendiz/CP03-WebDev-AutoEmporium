@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --text-color1: #000;
+    --text-color2: #fff;
+    --text-color3: #246BA0;
+    --main-color: #006494;
+    --second-color: #1B98E0;
+    --bg-color: #E8F1F2;
+    --bg-color2: #13293D;
+}
+
+
+/* reset da página */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--bg-color);
+}
+
+/* estilização do cabeçalho da página */
+header {
+    min-height: 80px;
+    min-width: 100%;
+    background-color: var(--second-color);
+    box-shadow: 0px 3px 10px #464646;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+    transition: all 0.1s ease;
+}
+
+.nav-link:hover {
+    border-bottom: 3px solid var(--text-color2);
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+}
+
+.login-button button {
+    border: none;
+    background-color: var(--text-color2);
+    color: #006691;
+    padding: 10px 15px;
+    border-radius: 15px;
+    transition: all 0.1s ease;
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: #006691;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.login-button button:hover {
+    background-color: var(--second-color);
+}
+
+.login-button a:hover {
+    color: var(--text-color2);
+}
+
+/* estilização do corpo */
+.corpo {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 10vh;
+}
+
+/* Estilização da introdução da página*/
+
+#inicio-pagina {
+    display: flex;
+    width: 95%;
+    height: 75vh;
+    background-color: var(--main-color);
+    margin: auto;
+    margin-top: 1%;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 1%;
+    box-shadow: 4px 4px 12px #aaaa;
+}
+
+.mensagem-bem-vindo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+.mensagem-bem-vindo h1 {
+    font-size: 24px;
+    color: var(--text-color2);
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.mensagem-bem-vindo hr {
+    width: 90%;
+}
+
+#banner {
+    width: 60%; /* 60% da largura da seção */
+    text-align: right;
+}
+
+#imgbanner {
+    width: 100%;
+    height: 100%;   
+    border-radius: 10px;
+}
+
+
+/* estilização da seção de lojas oficiais */
+#cards-lojas-oficiais {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.card-marcas {
+    border: 1px solid #ccc;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilização dos anúncios */
+.anuncios-cards {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin: 20px;
+}
+
+.card {
+    background-color: #fff;
+    width: 360px;
+    height: 420px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px #aaaa;
+}
+
+.card div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    height: 30%;
+}
+
+.card img {
+    width: 100%;
+    height: 260px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card h1 {
+    font-size: 1.2rem;
+}
+
+.card h2 {
+    font-size: .9rem;
+    color: #aaaa;
+}
+
+.card button {
+    background-color: var(--second-color);
+    height: 30px;
+    border: none;
+    padding: 4px;
+    width: 80%;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.card button:hover {
+    background-color: #137de8;
+    cursor: pointer;
+  }
+
+/* estilização das categorias */
+.categoria-cards {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente (opcional) */
+}
+
+.card-categoria {
+    height: 200px;
+    width: 300px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+
+.card-categoria img {
+    height: 200px;
+    width: 300px;
+    border-radius: 3px;
+    transition: .5s;
+}
+
+.intro {
+    height: 70px;
+    width: 300px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 70px;
+    background: rgb(27, 27, 27, .5);
+    color: var(--text-color2);
+    border-radius: 3px;
+    transition: .5s;
+}
+
+.intro h1 {
+    margin: 10px;
+    font-size: 36px;
+}
+
+.intro p {
+    font-size: 18px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.intro span {
+    font-weight: bold;
+}
+
+.card-categoria:hover {
+    cursor: pointer;
+}
+
+.card-categoria:hover .intro {
+    height: 150px;
+    bottom: 152px;
+    background-color: rgb(27, 27, 27, .5);
+}
+
+.card-categoria:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+
+.card-categoria:hover img {
+    transform: scale(1.1) rotate(-3deg);
+}
+
+/* estilização da div de contato*/
+/* .div-contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    width: 100%;
+    height: 40px;
+} */
+
+.div-contato button{
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+.div-contato button span {
+    color: var(--bg-color);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+footer {
+    background-color: var(--second-color);
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color2);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
