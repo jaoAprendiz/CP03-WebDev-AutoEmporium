@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/estilo.css">
     <title>Home - AutoEmporium</title>
-    <script>
-        // alert('Seja Bem-Vindo(a)');
-    </script>
 </head>
 <body>
 
@@ -19,14 +16,17 @@
 
             <div class="nav-list">
                 <ul>
-                    <li class="nav-item"><a href="" class="nav-link">Início</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Sobre</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Contato</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
                 </ul>
             </div>
 
-            <div class="login-button">
-                <button><a href="#">Entrar</a></button>
+            <div class="buttons">
+                <button class="dark-mode-active" onclick="toggleDarkMode()">
+                    <img src="./src/assets/dark-mode.png" alt="" id="dark-light-mode">
+                </button>
+                <button id="login-btn" onclick="redirecionarLogin()">Entrar</button>
             </div>
             
         </nav>
@@ -34,13 +34,13 @@
 
     <div class="corpo">
         <section id="inicio-pagina">
-                <div class="mensagem-bem-vindo">
-                    <h1>Seja Bem-Vindo(a)</h1>
-                    <hr>
-                </div>
-
                 <div id="banner">
                     <img alt="slideshow carros" id="imgbanner">
+                </div>
+
+                <div class="mensagem-bem-vindo">
+                    <h1>Seja Bem-Vindo(a) à AutoEmporium</h1>
+                    <h2>Sua loja segura e confiável de automóveis</h2>
                 </div>
         </section>
 
@@ -51,19 +51,19 @@
         
             <div id="cards-lojas-oficiais">
                 <div class="card-marcas">
-                    <a href="#"><img src="./src/assets/toyota.png" alt=""></a>
+                    <a href="https://www.toyota.com.br/"><img src="./src/assets/toyota.png" alt=""></a>
                 </div>
         
                 <div class="card-marcas">
-                    <a href="#"><img src="./src/assets/ford.png" alt=""></a>
+                    <a href="https://www.ford.com.br/"><img src="./src/assets/ford.png" alt=""></a>
                 </div>
         
                 <div class="card-marcas">
-                    <a href="#"><img src="./src/assets/honda.png" alt=""></a>
+                    <a href="https://www.honda.com.br/"><img src="./src/assets/honda.png" alt=""></a>
                 </div>
 
                 <div class="card-marcas">
-                    <a href="#"><img src="./src/assets/hyundai.png" alt=""></a>
+                    <a href="https://www.hyundai.com.br/"><img src="./src/assets/hyundai.png" alt=""></a>
                 </div>
             </div>
         </section>
@@ -78,30 +78,30 @@
                 <div class="card">
                     <img src="./src/assets/exemplo1.jpeg" alt="carro 1">
                     <div>
-                        <h1>Título</h1>
-                        <h2>Descrição</h2>
-                        <span>R$ 5.50</span>
-                        <button>Clique aqui</button>
+                        <h1>TOYOTA ETIOS</h1>
+                        <h2>1.5 X PLUS SEDAN 16V FLEX 4P AUTOMÁTICO</h2>
+                        <span>R$ 72.991</span>
+                        <button>Ver Parcelas</button>
                     </div>
                 </div>
 
                 <div class="card">
                     <img src="./src/assets/exemplo2.jpeg" alt="carro 2">
                     <div>
-                        <h1>Título</h1>
-                        <h2>Descrição</h2>
-                        <span>R$ 5.50</span>
-                        <button>Clique aqui</button>
+                        <h1>HONDA CIVIC</h1>
+                        <h2>1.5 16V TURBO GASOLINA TOURING 4P CVT</h2>
+                        <span>R$ 115.980</span>
+                        <button>Ver Parcelas</button>
                     </div>
                 </div>
 
                 <div class="card">
                     <img src="./src/assets/exemplo3.jpeg" alt="carro 3">
                     <div>
-                        <h1>Título</h1>
-                        <h2>Descrição</h2>
-                        <span>R$ 5.50</span>
-                        <button>Clique aqui</button>
+                        <h1>VOLKSWAGEN UP</h1>
+                        <h2>1.0 TSI MOVE UP 12V FLEX 4P MANUAL</h2>
+                        <span>R$ 58.990</span>
+                        <button>Ver Parcelas</button>
                     </div>
                 </div>
             </div>
@@ -109,7 +109,9 @@
         </section>
 
         <section id="categorias">
-            <h1>Categorias</h1>
+            <div class="section-titulos">
+                <h1 id="titulo-categoria">Categorias</h1>
+            </div>
             
             <div class="categoria-cards">
 
@@ -157,7 +159,7 @@
         </section>
 
         <div class="div-contato">
-            <button onclick="">Precisa de ajuda? Entre em contato conosco <span>CLIQUE AQUI</span></button>
+            <button onclick="redirecionarContato()">Precisa de ajuda? Entre em contato conosco <span>CLIQUE AQUI</span></button>
         </div>
         
     </div>
@@ -168,5 +170,9 @@
 
     <!-- JAVASCRIPT EXTERNO -->
     <script src="./src/js/script.js"></script>
+    <script>
+        alert('Seja Bem-Vindo(a)');
+        slideShow();
+    </script>
 </body>
 </html>
