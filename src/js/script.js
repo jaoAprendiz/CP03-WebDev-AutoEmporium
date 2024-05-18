@@ -103,6 +103,7 @@ var respostas = [
 ];
 
 // Função para iniciar o quiz
+
 function iniciarQuiz() {
     var pontuacao = 0;
 
