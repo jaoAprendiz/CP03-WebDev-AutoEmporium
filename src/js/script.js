@@ -73,3 +73,49 @@ form.addEventListener("submit", (event) => {
   // se todos os capos estiverem preenchidos enviar form
   form.submit();
 });
+
+
+// Definindo as perguntas e respostas
+var perguntas = [
+    "Qual foi o primeiro carro produzido em massa?",
+    "Qual é a marca de carros de luxo conhecida por seu logotipo de estrela de três pontas?",
+    "Em que país a marca de carros Ferrari foi fundada?",
+    "Qual fabricante de carros produz o modelo Civic?",
+    "Qual é o nome do carro elétrico mais vendido da Tesla?",
+    "Qual marca de carro é conhecida pelo emblema de um touro?",
+    "Qual carro esportivo é famoso pelo apelido Godzilla?",
+    "Qual é o nome do carro mais rápido do mundo (em termos de velocidade máxima) a partir de 2021?",
+    "Qual fabricante de carros é conhecido por seu emblema com uma elipse azul e o nome escrito em prata?",
+    "Qual é o nome do primeiro carro híbrido de produção em massa do mundo?"
+];
+
+var respostas = [
+    "Ford Model T.",
+    "Mercedes-Benz.",
+    "Itália.",
+    "Honda.",
+    "Tesla Model 3.",
+    "Lamborghini.",
+    "Nissan GT-R.",
+    "SSC Tuatara.",
+    "Ford.",
+    "Toyota Prius."
+];
+
+// Função para iniciar o quiz
+function iniciarQuiz() {
+    var pontuacao = 0;
+
+    // Loop para fazer as perguntas
+    for (var i = 0; i < perguntas.length; i++) {
+        var respostaUsuario = prompt(perguntas[i]);
+
+        // Verifica se a resposta do usuário está correta
+        if (respostaUsuario.toLowerCase() === respostas[i].toLowerCase()) {
+            pontuacao++;
+        }
+    }
+1
+    // Mostra a pontuação na tela
+    document.getElementById('resultado').innerHTML = 'Voce acertou $ {pontuação} de $ {perguntas.length} perguntas';
+}
