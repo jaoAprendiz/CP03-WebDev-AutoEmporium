@@ -28,3 +28,15 @@ function redirecionarLogin() {
 function redirecionarContato() {
     window.location.href = 'contato.html';
 }
+
+// VALIDANDO O USUÁRIO NA PÁGINA DE LOGIN
+function validar(){
+    //declarando a variavel
+    let usuario =document.getElementById("usuariologin").value;
+    let senha =document.getElementById("senhalogin").value;
+    if(usuario == "Admin" && senha === "12345"){
+        window.open('quiz.html');
+    }else{
+        alert("usuario e senha inválidos");
+    }
+}

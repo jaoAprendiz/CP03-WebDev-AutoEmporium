@@ -370,4 +370,36 @@ footer {
     font-weight: 700;
 }
 
+/* ESTILIZAÇAO DA PAGINA LOGIN */
+#login__conteudo h1 {
+    text-align: center;
+}
+
+#login__conteudo label{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#login__conteudo input, select, textarea{
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+#login__conteudo button{
+    padding:10px ;
+    border: none;
+    background-color: gray;
+    color: white;
+    font-size: 1.1rem;
+    cursor:pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+#login__conteudo button:hover {
+    background-color: #006DB2;
+}
+
 
