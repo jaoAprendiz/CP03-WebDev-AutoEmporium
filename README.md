@@ -30,7 +30,6 @@ O AutoEmporium foi desenvolvido utilizando as seguintes tecnologias:
 - Este projeto foi desenvolvido por [João Victor Soave](https://github.com/siigAprendiz).
 - Este projeto foi desenvolvido por [Felipe Nascimento](https://github.com/felipe3103).
 - Este projeto foi desenvolvido por [Gustavo Henrique Martins](https://github.com/gustavo190805).
-- Este projeto foi desenvolvido por [Henrique Ignacio Bartolo](https://github.com/henriqueignacio).
 
 ### Link do Repositório: [AutoEmporium](https://github.com/siigAprendiz/CP03-WebDev-AutoEmporium)
 ### Link do projeto no gitPages: [AutoEmporium]()
