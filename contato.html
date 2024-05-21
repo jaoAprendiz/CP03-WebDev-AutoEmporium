@@ -3,26 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/estilo.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/estilo-contato.css">
+    <title>Contato - AutoEmporium</title>
 </head>
 <body>
-    <section id="contato__conteudo">
-        <h1>Preencha esse formulario: </h1>
-        <form id="form">
-            <label for="name">Nome:</label>
-            <input type="text"  id="name"> <br>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="#"><img src="./src/assets/logo.png" alt="logo"></a>
+            </div>
 
-            <label for="email">E-mail:</label>
-            <input type="email" id="email"> <br>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
 
-            <label for="telephone">Telefone:</label>
-            <input type="tel"  id="telefone"> <br>
+            <div class="buttons">
+                <button class="dark-mode-active" onclick="toggleDarkMode()">
+                    <img src="./src/assets/dark-mode.png" alt="" id="dark-light-mode">
+                </button>
+                <button id="login-btn" onclick="redirecionarLogin()">Entrar</button>
+            </div>
             
-            <button type="submit">Enviar</button>
+        </nav>
+    </header>
 
-        </form>
-    </section>
+    <div class="corpo">
+        <section id="contato__conteudo">
+            <h1>Entre em contato...</h1>
+            <form id="form">
+                
+                <input type="text"  id="name" placeholder="Seu Nome..."> <br>
+
+                <input type="email" id="email" placeholder="Seu E-Mail..."> <br>
+
+                <textarea name="obs" id="c-obs" placeholder="Escreva sua mensagem..." cols="30" rows="10"></textarea> <br>
+
+                <div class="form-botton">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <footer class="rodape">
+        <h4>AutoEmporium© @2024 - Todos os direito reservados</h4>
+    </footer>
 
     <script src="./src/js/script.js"></script>
 </body>

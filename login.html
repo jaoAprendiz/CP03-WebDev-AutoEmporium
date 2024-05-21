@@ -3,23 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/estilo.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/estilo-login.css">
+    <title>Login - AutoEmporium</title>
 </head>
 <body>
-    <section id="login__conteudo">
-        <h1>Faça o seu cadastro</h1>
-        <form >
-            <label for="usuario">Usuário:</label>
-            <input type="text" placeholder="Digite sue usuario" id="usuariologin"> <br>
-        
-            <label for="senha">Nome:</label>
-            <input type="password" placeholder="Digite sua senha" id="senhalogin"><br>
-        
-        <button onclick="validar()">Login</button>
-        
-           </form> 
-    </section>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="#"><img src="./src/assets/logo.png" alt="logo"></a>
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="buttons">
+                <button class="dark-mode-active" onclick="toggleDarkMode()">
+                    <img src="./src/assets/dark-mode.png" alt="" id="dark-light-mode">
+                </button>
+                <button id="login-btn" onclick="redirecionarLogin()">Entrar</button>
+            </div>
+            
+        </nav>
+    </header>
+
+    <div class="corpo">
+        <div class="wrapper">
+            <form action="">
+                <h1>Login</h1>
+
+                <div class="input-box">
+                    <input type="text" placeholder="Usuário..." id="usuariologin">
+                    <img src="./src/assets/user.png" alt="boneco">
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Senha..." id="senhalogin">
+                    <img src="./src/assets/padlock.png" alt="cadeado">
+                </div>
+
+                <div class="remember-forgot">
+                    <label for=""><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+            
+            <button onclick="validar()">Login</button>
+
+            <div class="register-link">
+                <p>Não tem uma conta? <a href="">Cadastre-se</a></p>
+            </div>
+            
+            </form>
+        </div>
+    </div>
+
+    <footer class="rodape">
+        <h4>AutoEmporium© @2024 - Todos os direito reservados</h4>
+    </footer>
 
 <script src="src/js/script.js"></script>
 

@@ -41,40 +41,6 @@ function validar(){
     }
 }
 
-// VALIDANDO OS CAMPOS DO CONTATO
-
-// Declarando as variáveis
-const form = document.querySelector("#form")
-const nameInput = document.querySelector("#name")
-const emailInput = document.querySelector("#email")
-const telInput = document.querySelector("#telefone")
-
-form.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    //verifica se o nome esta vazio
-    if(nameInput.value === ""){
-        alert("Preencha seu nome")
-        return;
-    }
-
-    //verifica se o email esta vazio
-    if(emailInput.value === ""){
-        alert("Preencha seu seu email")
-        return;
-    }
-
-    //verifica se o telefone esta vazio
-    if(telInput.value === ""){
-        alert("Preencha seu seu telefone")
-        return;
-    }
-
-  // se todos os capos estiverem preenchidos enviar form
-  form.submit();
-});
-
-
 // Definindo as perguntas e respostas
 var perguntas = [
     "Qual foi o primeiro carro produzido em massa?",
@@ -90,16 +56,16 @@ var perguntas = [
 ];
 
 var respostas = [
-    "Ford Model T.",
-    "Mercedes-Benz.",
-    "Itália.",
-    "Honda.",
-    "Tesla Model 3.",
-    "Lamborghini.",
-    "Nissan GT-R.",
-    "SSC Tuatara.",
-    "Ford.",
-    "Toyota Prius."
+    "Ford Model T",
+    "Mercedes-Benz",
+    "Itália",
+    "Honda",
+    "Tesla Model 3",
+    "Lamborghini",
+    "Nissan GT-R",
+    "SSC Tuatara",
+    "Ford",
+    "Toyota Prius"
 ];
 
 // Função para iniciar o quiz
@@ -118,5 +84,39 @@ function iniciarQuiz() {
     }
 1
     // Mostra a pontuação na tela
-    document.getElementById('resultado').innerHTML = 'Voce acertou $ {pontuação} de $ {perguntas.length} perguntas';
+    document.getElementById('resultado').innerHTML = `Voce acertou ${pontuacao} de ${perguntas.length} perguntas`;
 }
+
+// VALIDANDO OS CAMPOS DO CONTATO
+
+// Declarando as variáveis
+const form = document.querySelector("#form");
+const nameInput = document.querySelector("#name");
+const emailInput = document.querySelector("#email");
+const obsInput = document.querySelector("#c-obs");
+
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    //verifica se o nome esta vazio
+    if(nameInput.value === ""){
+        alert("Preencha seu nome");
+        return;
+    }
+
+    //verifica se o email esta vazio
+    if(emailInput.value === ""){
+        alert("Preencha seu seu email");
+        return;
+    }
+
+    //verifica se o telefone esta vazio
+    if(obsInput.value === ""){
+        alert("Preencha a mensagem");
+        return;
+    }
+
+  // se todos os capos estiverem preenchidos enviar form
+  form.submit();
+  alert('Mensagem enviada com sucesso! Enviaremos uma resposta assim que possível :)')
+});

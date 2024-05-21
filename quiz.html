@@ -3,12 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/estilo-quiz.css">
+    <title>Quiz - AutoEmporium</title>
 </head>
 <body>
-    <section id="section-quiz">
-        <h1 id="resultado"></h1>
-    </section>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="#"><img src="./src/assets/logo.png" alt="logo"></a>
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="buttons">
+                <button class="dark-mode-active" onclick="toggleDarkMode()">
+                    <img src="./src/assets/dark-mode.png" alt="" id="dark-light-mode">
+                </button>
+                <button id="login-btn" onclick="redirecionarLogin()">Entrar</button>
+            </div>
+            
+        </nav>
+    </header>
+
+    <div class="corpo">
+        <section id="section-quiz">
+            <h1 id="resultado"></h1>
+        </section>
+    </div>
+
+    <footer class="rodape">
+        <h4>AutoEmporium© @2024 - Todos os direito reservados</h4>
+    </footer>
 
     <script src="./src/js/script.js"></script>
 

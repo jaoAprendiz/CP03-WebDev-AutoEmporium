@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --text-color1: #000;
+    --text-color2: #fff;
+    --text-color3: #246BA0;
+    --main-color: #006494;
+    --second-color: #1B98E0;
+    --bg-color: #E8F1F2;
+    --bg-color2: #13293D;
+}
+
+
+/* reset da página */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--bg-color);
+}
+
+/* DARK MODE  ELIGHT MODE*/
+.dark-mode {
+    background-color: var(--bg-color2);
+    color: white;
+}
+
+.dark-mode-card {
+    background-color: #464646;
+}
+
+/* estilização do cabeçalho da página */
+header {
+    min-height: 80px;
+    min-width: 100%;
+    background-color: var(--second-color);
+    box-shadow: 0px 3px 10px #464646;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+    transition: all 0.1s ease;
+}
+
+.nav-link:hover {
+    border-bottom: 3px solid var(--text-color2);
+}
+
+/* estilização dos botões */
+/* estilização do botão de light mode e dark mode*/
+.dark-mode-active {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.dark-mode-active img {
+    width: 40px;
+}
+
+/* estilização do botão de login*/
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+#login-btn {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: bolder;
+    background-color: var(--text-color2);
+    width: 160px;
+    padding: 20px;
+    text-align: center;
+    border: none;
+    color: var(--second-color);
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+}
+
+#login-btn:hover, #login-btn:focus, #login-btn:active {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0,0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* estilização do corpo */
+.corpo {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    gap: 10vh;
+}
+
+/* ESTILIZAÇÃO DA PÁGINA DE CONTATO */
+form {
+    width: 40vw;
+    height: 50vh;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+#contato__conteudo h1{
+    text-align:center;
+    margin: 15px;
+    font-size: 2rem;
+}
+
+#contato__conteudo input, select, textarea{
+    width: 35vw;
+    padding: 15px;
+    border: 1px solid var(--bg-color);
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1rem;
+}
+
+.form-botton button {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: bolder;
+    background-color: var(--bg-color2);
+    width: 25vw;
+    padding: 20px;
+    text-align: center;
+    border: none;
+    color: var(--bg-color);
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+}
+
+.form-botton button:hover, .form-botton button:focus, .form-botton button:active {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0,0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* ESTILIZAÇÃO DO FOOTER */
+footer {
+    background-color: var(--second-color);
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color2);
+    font-size: 18px;
+    font-weight: 700;
+}
