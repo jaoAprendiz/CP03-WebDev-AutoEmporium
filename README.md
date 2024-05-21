@@ -32,7 +32,7 @@ O AutoEmporium foi desenvolvido utilizando as seguintes tecnologias:
 - Este projeto foi desenvolvido por [Gustavo Henrique Martins](https://github.com/gustavo190805).
 
 ### Link do Repositório: [AutoEmporium](https://github.com/siigAprendiz/CP03-WebDev-AutoEmporium)
-### Link do projeto no gitPages: [AutoEmporium]()
+### Link do projeto no gitPages: [AutoEmporium](https://jaoaprendiz.github.io/CP03-WebDev-AutoEmporium/)
 ### Link do projeto no Linkedin: [AutoEmporium]()
 
 ---
