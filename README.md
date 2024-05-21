@@ -33,7 +33,7 @@ O AutoEmporium foi desenvolvido utilizando as seguintes tecnologias:
 
 ### Link do Repositório: [AutoEmporium](https://github.com/siigAprendiz/CP03-WebDev-AutoEmporium)
 ### Link do projeto no gitPages: [AutoEmporium](https://jaoaprendiz.github.io/CP03-WebDev-AutoEmporium/)
-### Link do projeto no Linkedin: [AutoEmporium]()
+### Link do projeto no Linkedin: [AutoEmporium](https://www.linkedin.com/feed/update/urn:li:activity:7198696999376818176/)
 
 ---
 
